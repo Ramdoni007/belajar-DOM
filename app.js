@@ -61,3 +61,19 @@ document.getElementById("task-tittle").style.padding = "5px";
 cardHeader.textContent = "Task Tab";
 cardHeader.innerText = "My Task";
 cardHeader.innerHTML = '<span style="color: bluesky">TaskList</span>';
+
+// Using Query Selector
+
+// Fungsinya Yaitu Untuk memanipulasi , Mengedit ,secara single atau satu satu
+// Sesuai dengan ID , Class atau Element nya
+// Contohnya Seperti d bawah iini
+
+console.log(document.querySelector("#task-tittle")); // Berdasarkan Nama ID nya
+console.log(document.querySelector("card-header")); // Berdasarkan Nama Class nya
+console.log(document.querySelector("button")); // Memanggil Button Pertama dari urutan Index.html
+console.log(document.querySelector(".delete-item"));
+
+document.querySelector("li").style.color = "blue";
+document.querySelector("ul li").style.color = "green";
+document.querySelector("li:last-child").style.color = "blue";
+document.querySelector("li:nth-child(2)").style.color = "yellow";
