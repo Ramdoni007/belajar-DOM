@@ -1,60 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
     <title>Hello, world!</title>
   </head>
   <body>
-    
-    <div class="container"  style="padding-top: 15px;">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        Task LIst
-                    </div>
-                    <div class="card-body">
-                        <form id="form-task">
-                            <div class="form-group">
-                                <label for="">New Task</label>  
-                                <input type="text" name="title" id="title" class="form-control">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                        <hr>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                Cras justo odio
-                                <button class="float-right btn btn-danger btn-sm delete-item">x</button>
-                            </li>
-                            <li class="list-group-item">
-                                Dapibus ac facilisis in
-                                <button class="float-right btn btn-danger btn-sm delete-item">x</button>
-                            </li>
-                            <li class="list-group-item">
-                                Vestibulum at eros
-                                <button class="float-right btn btn-danger btn-sm delete-item">x</button>
-                            </li>
-                        </ul>
-                        <hr>
-                        <button class="btn btn-info clear-task">Clear Task</button>
-                    </div>
+    <div class="container" style="padding-top: 15px">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header" id="task-tittle">Task LIst</div>
+            <div class="card-body">
+              <form id="form-task">
+                <div class="form-group">
+                  <label for="">New Task</label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="form-control"
+                  />
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <hr />
+              <ul class="list-group">
+                <li class="list-group-item">
+                  Cras justo odio
+                  <button class="float-right btn btn-danger btn-sm delete-item">
+                    x
+                  </button>
+                </li>
+                <li class="list-group-item">
+                  Dapibus ac facilisis in
+                  <button class="float-right btn btn-danger btn-sm delete-item">
+                    x
+                  </button>
+                </li>
+                <li class="list-group-item">
+                  Vestibulum at eros
+                  <button class="float-right btn btn-danger btn-sm delete-item">
+                    x
+                  </button>
+                </li>
+              </ul>
+              <hr />
+              <button class="btn btn-info clear-task">Clear Task</button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
