@@ -44,23 +44,23 @@
 
 //Document getElementByid
 
-console.log(document.getElementById("task-tittle"));
-console.log(document.getElementById("task-tittle").id);
-console.log(document.getElementById("task-tittle").className);
+// console.log(document.getElementById("task-tittle"));
+// console.log(document.getElementById("task-tittle").id);
+// console.log(document.getElementById("task-tittle").className);
 
 // Menggunakan variable sebagai ganti id di dalam html
-const cardHeader = document.getElementById("task-tittle");
+// const cardHeader = document.getElementById("task-tittle");
 
 // Change Styling
-document.getElementById("task-tittle").style.background = "#f7dad9";
-document.getElementById("task-tittle").style.color = "#bc6ff1";
-document.getElementById("task-tittle").style.padding = "5px";
+// document.getElementById("task-tittle").style.background = "#f7dad9";
+// document.getElementById("task-tittle").style.color = "#bc6ff1";
+// document.getElementById("task-tittle").style.padding = "5px";
 
 //Change Content
 // Jadi nya ringkas seperti ini tinggal manggil nama variable nya :)
-cardHeader.textContent = "Task Tab";
-cardHeader.innerText = "My Task";
-cardHeader.innerHTML = '<span style="color: bluesky">TaskList</span>';
+// cardHeader.textContent = "Task Tab";
+// cardHeader.innerText = "My Task";
+// cardHeader.innerHTML = '<span style="color: bluesky">TaskList</span>';
 
 // Using Query Selector
 
@@ -68,12 +68,38 @@ cardHeader.innerHTML = '<span style="color: bluesky">TaskList</span>';
 // Sesuai dengan ID , Class atau Element nya
 // Contohnya Seperti d bawah iini
 
-console.log(document.querySelector("#task-tittle")); // Berdasarkan Nama ID nya
-console.log(document.querySelector("card-header")); // Berdasarkan Nama Class nya
-console.log(document.querySelector("button")); // Memanggil Button Pertama dari urutan Index.html
-console.log(document.querySelector(".delete-item"));
+// console.log(document.querySelector("#task-tittle")); // Berdasarkan Nama ID nya
+// console.log(document.querySelector("card-header")); // Berdasarkan Nama Class nya
+// console.log(document.querySelector("button")); // Memanggil Button Pertama dari urutan Index.html
+// console.log(document.querySelector(".delete-item"));
 
-document.querySelector("li").style.color = "blue";
-document.querySelector("ul li").style.color = "green";
-document.querySelector("li:last-child").style.color = "blue";
-document.querySelector("li:nth-child(2)").style.color = "yellow";
+// document.querySelector("li").style.color = "blue";
+// document.querySelector("ul li").style.color = "green";
+// document.querySelector("li:last-child").style.color = "blue";
+// document.querySelector("li:nth-child(2)").style.color = "yellow";
+
+// Document getElement ByClassName
+// Adalah Memaanggil Elemenet Berdasarkan ClassName nya secara global scope
+const items = document.getElementsByClassName("list-group-item");
+console.log(items);
+console.log(items[0]);
+console.log(items[1]);
+items[0].style.color = "red";
+items[1].style.color = "blue";
+items[2].style.color = "green";
+
+// Document query Selector ClassName
+// Adalah Memaanggil Elemenet Berdasarkan ClassName nya secara local scope
+
+const listItem = document
+  .querySelector("ul")
+  .getElementsByClassName("list-group-item");
+
+// Document.getELementByTagName
+// Adalah Memanggil ELement Berdasarkan TagName Yang di miliki index.html
+
+const lis = document.getElementsByTagName("li");
+console.log(lis);
+console.log(lis[0]);
+lis[0].style.color = "green";
+lis[2].style.color = "skyblue";
